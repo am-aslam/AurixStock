@@ -8,45 +8,45 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AurixColors {
   // ── Gold Palette ──────────────────────────────────────────
-  static const Color goldPrimary   = Color(0xFFE6C068);
-  static const Color goldSoft      = Color(0xFFF4D58D);
-  static const Color goldDark      = Color(0xFFB8963A);
-  static const Color goldGlow      = Color(0xFFFFD700);
+  static const Color goldPrimary = Color(0xFFE6C068);
+  static const Color goldSoft = Color(0xFFF4D58D);
+  static const Color goldDark = Color(0xFFB8963A);
+  static const Color goldGlow = Color(0xFFFFD700);
 
   // ── Background & Surface ──────────────────────────────────
-  static const Color bgPrimary     = Color(0xFF0A0B10);
-  static const Color bgSecondary   = Color(0xFF12141C);
-  static const Color bgElevated    = Color(0xFF181A24);
-  static const Color bgCard        = Color(0xFF1C1F2E);
-  static const Color bgGlass       = Color(0x1AFFFFFF);
-  static const Color bgGlassHover  = Color(0x26FFFFFF);
+  static const Color bgPrimary = Color(0xFF0A0B10);
+  static const Color bgSecondary = Color(0xFF12141C);
+  static const Color bgElevated = Color(0xFF181A24);
+  static const Color bgCard = Color(0xFF1C1F2E);
+  static const Color bgGlass = Color(0x1AFFFFFF);
+  static const Color bgGlassHover = Color(0x26FFFFFF);
 
   // ── Text ──────────────────────────────────────────────────
-  static const Color textPrimary   = Color(0xFFFFFFFF);
+  static const Color textPrimary = Color(0xFFFFFFFF);
   static const Color textSecondary = Color(0xFFB0B3C0);
-  static const Color textMuted     = Color(0xFF6C7080);
-  static const Color textOnGold    = Color(0xFF1A1000);
+  static const Color textMuted = Color(0xFF6C7080);
+  static const Color textOnGold = Color(0xFF1A1000);
 
   // ── Borders & Dividers ────────────────────────────────────
-  static const Color borderGlass   = Color(0x33E6C068);
-  static const Color borderSubtle  = Color(0x1AFFFFFF);
+  static const Color borderGlass = Color(0x33E6C068);
+  static const Color borderSubtle = Color(0x1AFFFFFF);
   static const Color borderDivider = Color(0xFF1E2130);
 
   // ── Semantic ──────────────────────────────────────────────
-  static const Color success       = Color(0xFF22C55E);
-  static const Color successBg     = Color(0x1A22C55E);
-  static const Color error         = Color(0xFFEF4444);
-  static const Color errorBg       = Color(0x1AEF4444);
-  static const Color warning       = Color(0xFFF59E0B);
-  static const Color warningBg     = Color(0x1AF59E0B);
-  static const Color info          = Color(0xFF3B82F6);
-  static const Color infoBg        = Color(0x1A3B82F6);
+  static const Color success = Color(0xFF22C55E);
+  static const Color successBg = Color(0x1A22C55E);
+  static const Color error = Color(0xFFEF4444);
+  static const Color errorBg = Color(0x1AEF4444);
+  static const Color warning = Color(0xFFF59E0B);
+  static const Color warningBg = Color(0x1AF59E0B);
+  static const Color info = Color(0xFF3B82F6);
+  static const Color infoBg = Color(0x1A3B82F6);
 
   // ── Credit / Debit ────────────────────────────────────────
-  static const Color credit        = Color(0xFF10B981);
-  static const Color creditBg      = Color(0x1A10B981);
-  static const Color debit         = Color(0xFFEF4444);
-  static const Color debitBg       = Color(0x1AEF4444);
+  static const Color credit = Color(0xFF10B981);
+  static const Color creditBg = Color(0x1A10B981);
+  static const Color debit = Color(0xFFEF4444);
+  static const Color debitBg = Color(0x1AEF4444);
 
   // ── Gradients ─────────────────────────────────────────────
   static const LinearGradient goldGradient = LinearGradient(
@@ -239,26 +239,26 @@ class AurixTheme {
       brightness: Brightness.dark,
       scaffoldBackgroundColor: AurixColors.bgPrimary,
       colorScheme: const ColorScheme.dark(
-        primary:             AurixColors.goldPrimary,
-        onPrimary:           AurixColors.textOnGold,
-        primaryContainer:    Color(0xFF2A2000),
-        onPrimaryContainer:  AurixColors.goldSoft,
-        secondary:           Color(0xFF4E9AF1),
-        onSecondary:         Colors.white,
-        surface:             AurixColors.bgSecondary,
-        onSurface:           AurixColors.textPrimary,
+        primary: AurixColors.goldPrimary,
+        onPrimary: AurixColors.textOnGold,
+        primaryContainer: Color(0xFF2A2000),
+        onPrimaryContainer: AurixColors.goldSoft,
+        secondary: Color(0xFF4E9AF1),
+        onSecondary: Colors.white,
+        surface: AurixColors.bgSecondary,
+        onSurface: AurixColors.textPrimary,
         surfaceContainerHighest: AurixColors.bgElevated,
-        onSurfaceVariant:    AurixColors.textSecondary,
-        outline:             AurixColors.borderDivider,
-        error:               AurixColors.error,
-        onError:             Colors.white,
-        shadow:              Colors.black,
+        onSurfaceVariant: AurixColors.textSecondary,
+        outline: AurixColors.borderDivider,
+        error: AurixColors.error,
+        onError: Colors.white,
+        shadow: Colors.black,
       ),
 
       // AppBar
       appBarTheme: AppBarTheme(
-        backgroundColor:    Colors.transparent,
-        elevation:          0,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         scrolledUnderElevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.light,
         titleTextStyle: GoogleFonts.poppins(
@@ -280,26 +280,29 @@ class AurixTheme {
         height: 72,
         iconTheme: WidgetStateProperty.resolveWith((s) {
           if (s.contains(WidgetState.selected)) {
-            return const IconThemeData(color: AurixColors.goldPrimary, size: 22);
+            return const IconThemeData(
+                color: AurixColors.goldPrimary, size: 22);
           }
           return const IconThemeData(color: AurixColors.textMuted, size: 22);
         }),
         labelTextStyle: WidgetStateProperty.resolveWith((s) {
           if (s.contains(WidgetState.selected)) {
             return GoogleFonts.poppins(
-              fontSize: 11, fontWeight: FontWeight.w600,
+              fontSize: 11,
+              fontWeight: FontWeight.w600,
               color: AurixColors.goldPrimary,
             );
           }
           return GoogleFonts.poppins(
-            fontSize: 11, fontWeight: FontWeight.w500,
+            fontSize: 11,
+            fontWeight: FontWeight.w500,
             color: AurixColors.textMuted,
           );
         }),
       ),
 
       // Cards
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AurixColors.bgCard,
         elevation: 0,
         shadowColor: Colors.black.withOpacity(0.4),
@@ -313,13 +316,15 @@ class AurixTheme {
       // Elevated Button
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor:  AurixColors.goldPrimary,
-          foregroundColor:  AurixColors.textOnGold,
+          backgroundColor: AurixColors.goldPrimary,
+          foregroundColor: AurixColors.textOnGold,
           elevation: 0,
           shadowColor: Colors.transparent,
           padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 15),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-          textStyle: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+          textStyle:
+              GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
         ),
       ),
 
@@ -329,8 +334,10 @@ class AurixTheme {
           foregroundColor: AurixColors.goldPrimary,
           side: const BorderSide(color: AurixColors.goldPrimary, width: 1.5),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-          textStyle: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+          textStyle:
+              GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
         ),
       ),
 
@@ -338,7 +345,8 @@ class AurixTheme {
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
           foregroundColor: AurixColors.goldPrimary,
-          textStyle: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
+          textStyle:
+              GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
         ),
       ),
 
@@ -364,7 +372,8 @@ class AurixTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: const BorderSide(color: AurixColors.goldPrimary, width: 2),
+          borderSide:
+              const BorderSide(color: AurixColors.goldPrimary, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
@@ -374,9 +383,12 @@ class AurixTheme {
           borderRadius: BorderRadius.circular(14),
           borderSide: const BorderSide(color: AurixColors.error, width: 2),
         ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-        labelStyle: GoogleFonts.poppins(color: AurixColors.textMuted, fontSize: 14),
-        hintStyle: GoogleFonts.poppins(color: AurixColors.textMuted, fontSize: 14),
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        labelStyle:
+            GoogleFonts.poppins(color: AurixColors.textMuted, fontSize: 14),
+        hintStyle:
+            GoogleFonts.poppins(color: AurixColors.textMuted, fontSize: 14),
         prefixIconColor: AurixColors.textMuted,
         suffixIconColor: AurixColors.textMuted,
         errorStyle: GoogleFonts.poppins(color: AurixColors.error, fontSize: 12),
@@ -390,7 +402,7 @@ class AurixTheme {
       ),
 
       // Dialog
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor: AurixColors.bgElevated,
         elevation: 24,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
@@ -408,8 +420,8 @@ class AurixTheme {
       // SnackBar
       snackBarTheme: SnackBarThemeData(
         backgroundColor: AurixColors.bgElevated,
-        contentTextStyle: GoogleFonts.poppins(
-            fontSize: 13, color: AurixColors.textPrimary),
+        contentTextStyle:
+            GoogleFonts.poppins(fontSize: 13, color: AurixColors.textPrimary),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
         behavior: SnackBarBehavior.floating,
         elevation: 8,
@@ -420,8 +432,8 @@ class AurixTheme {
         backgroundColor: AurixColors.bgElevated,
         selectedColor: AurixColors.goldPrimary.withOpacity(0.2),
         side: const BorderSide(color: AurixColors.borderDivider),
-        labelStyle: GoogleFonts.poppins(
-            fontSize: 12, color: AurixColors.textSecondary),
+        labelStyle:
+            GoogleFonts.poppins(fontSize: 12, color: AurixColors.textSecondary),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       ),
@@ -458,11 +470,12 @@ class AurixTheme {
       textTheme: _buildTextTheme(),
 
       // Tab
-      tabBarTheme: TabBarTheme(
+      tabBarTheme: TabBarThemeData(
         indicatorColor: AurixColors.goldPrimary,
         labelColor: AurixColors.goldPrimary,
         unselectedLabelColor: AurixColors.textMuted,
-        labelStyle: GoogleFonts.poppins(fontSize: 13, fontWeight: FontWeight.w600),
+        labelStyle:
+            GoogleFonts.poppins(fontSize: 13, fontWeight: FontWeight.w600),
         unselectedLabelStyle:
             GoogleFonts.poppins(fontSize: 13, fontWeight: FontWeight.w500),
         indicator: const UnderlineTabIndicator(
@@ -475,50 +488,71 @@ class AurixTheme {
   static TextTheme _buildTextTheme() {
     return TextTheme(
       displayLarge: GoogleFonts.poppins(
-          fontSize: 32, fontWeight: FontWeight.w700,
-          color: AurixColors.textPrimary, letterSpacing: -0.5),
+          fontSize: 32,
+          fontWeight: FontWeight.w700,
+          color: AurixColors.textPrimary,
+          letterSpacing: -0.5),
       displayMedium: GoogleFonts.poppins(
-          fontSize: 28, fontWeight: FontWeight.w700,
-          color: AurixColors.textPrimary, letterSpacing: -0.3),
+          fontSize: 28,
+          fontWeight: FontWeight.w700,
+          color: AurixColors.textPrimary,
+          letterSpacing: -0.3),
       displaySmall: GoogleFonts.poppins(
-          fontSize: 24, fontWeight: FontWeight.w600,
+          fontSize: 24,
+          fontWeight: FontWeight.w600,
           color: AurixColors.textPrimary),
       headlineLarge: GoogleFonts.poppins(
-          fontSize: 22, fontWeight: FontWeight.w700,
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
           color: AurixColors.textPrimary),
       headlineMedium: GoogleFonts.poppins(
-          fontSize: 20, fontWeight: FontWeight.w600,
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
           color: AurixColors.textPrimary),
       headlineSmall: GoogleFonts.poppins(
-          fontSize: 18, fontWeight: FontWeight.w600,
+          fontSize: 18,
+          fontWeight: FontWeight.w600,
           color: AurixColors.textPrimary),
       titleLarge: GoogleFonts.poppins(
-          fontSize: 16, fontWeight: FontWeight.w600,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
           color: AurixColors.textPrimary),
       titleMedium: GoogleFonts.poppins(
-          fontSize: 14, fontWeight: FontWeight.w600,
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
           color: AurixColors.textPrimary),
       titleSmall: GoogleFonts.poppins(
-          fontSize: 12, fontWeight: FontWeight.w600,
-          color: AurixColors.textSecondary, letterSpacing: 0.5),
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+          color: AurixColors.textSecondary,
+          letterSpacing: 0.5),
       bodyLarge: GoogleFonts.poppins(
-          fontSize: 15, fontWeight: FontWeight.w400,
+          fontSize: 15,
+          fontWeight: FontWeight.w400,
           color: AurixColors.textSecondary),
       bodyMedium: GoogleFonts.poppins(
-          fontSize: 13, fontWeight: FontWeight.w400,
+          fontSize: 13,
+          fontWeight: FontWeight.w400,
           color: AurixColors.textSecondary),
       bodySmall: GoogleFonts.poppins(
-          fontSize: 11, fontWeight: FontWeight.w400,
+          fontSize: 11,
+          fontWeight: FontWeight.w400,
           color: AurixColors.textMuted),
       labelLarge: GoogleFonts.poppins(
-          fontSize: 13, fontWeight: FontWeight.w600,
-          color: AurixColors.textPrimary, letterSpacing: 0.3),
+          fontSize: 13,
+          fontWeight: FontWeight.w600,
+          color: AurixColors.textPrimary,
+          letterSpacing: 0.3),
       labelMedium: GoogleFonts.poppins(
-          fontSize: 11, fontWeight: FontWeight.w600,
-          color: AurixColors.textSecondary, letterSpacing: 0.4),
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+          color: AurixColors.textSecondary,
+          letterSpacing: 0.4),
       labelSmall: GoogleFonts.poppins(
-          fontSize: 10, fontWeight: FontWeight.w500,
-          color: AurixColors.textMuted, letterSpacing: 0.5),
+          fontSize: 10,
+          fontWeight: FontWeight.w500,
+          color: AurixColors.textMuted,
+          letterSpacing: 0.5),
     );
   }
 }
